@@ -25,6 +25,9 @@ public class Ranking : MonoBehaviour
         {
             return playerScores[playerName];
         }
+        
+        Debug.LogWarning("Player " + playerName + " not found in ranking");
+        
         return 0;
     }
 
